@@ -60,7 +60,7 @@ export function countArray(array) {
     let count = new Object();
     for (let i = 0; i < array.length; i++) {
         let keys = Object.keys(count);
-        if (array[i] in keys) {
+        if (Object.keys(array[i]).toString in keys) {
             count[array[i]]++;
         } else {
             count[array[i]] = 1;
