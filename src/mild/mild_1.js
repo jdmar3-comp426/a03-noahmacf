@@ -56,22 +56,6 @@ export function maxAndMin(numbers) {
  * returns: {'2': 2, '3': 3, '6': 1, some: 2, hello: 1, '1,2': 1}
  *
  */
-/*
-export function countArray(array) {
-    let count = new Object();
-    for (let i = 0; i < array.length; i++) {
-        let countKeys = Object.keys(count);
-        for (let j = 0; j < countKeys.length; j++) {
-            if (array[i] != countKeys[j]) {
-                count[array[i]] = 1;
-            } else if (arrKeys[i] == countKeys[j]) {
-                count[array[i]] += 1;
-            }
-        }
-    }
-    return count;
-}
-*/
 
 export function countArray(array) {
     let count = new Object();
@@ -81,10 +65,5 @@ export function countArray(array) {
     for (let i = 0; i < array.length; i++) {
         count[array[i]]++;
     }
-    //for (let i = 0; i < array.length; i++) {
-    //    if (array[i] in Object.keys(count)) {
-    //        count[array[i]]++;
-    //    }
-    //}
     return count;
 }
