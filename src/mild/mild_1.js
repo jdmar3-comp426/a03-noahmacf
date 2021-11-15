@@ -62,10 +62,10 @@ export function countArray(array) {
         let countKeys = Object.keys(count);
         let arrKeys = Object.keys(array);
         for (let j = 0; j < countKeys.length; j++) {
-            if (arrKeys[i] == countKeys[j]) {
-                count[array[j]]++;
-            } else {
+            if (arrKeys[i] != countKeys[j]) {
                 count[array[j]] = 1;
+            } else {
+                count[array[j]]++;
             }
         }
     }
