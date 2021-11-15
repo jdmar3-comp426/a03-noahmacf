@@ -61,8 +61,8 @@ export function countArray(array) {
     for (let i = 0; i < array.length; i++) {
         let countKeys = Object.keys(count);
         let arrKeys = Object.keys(array);
-        for (let j = 0; j < arrKeys.length; j++) {
-            if (Object.prototype.hasOwnProperty.call(countKeys, arrKeys[i])) {
+        for (let j = 0; j < countKeys.length; j++) {
+            if (arrKeys[i] == countKeys[j]) {
                 count[array[j]]++;
             } else {
                 count[array[j]] = 1;
