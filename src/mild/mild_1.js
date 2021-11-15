@@ -64,8 +64,8 @@ export function countArray(array) {
         for (let j = 0; j < countKeys.length; j++) {
             if (arrKeys[i] != countKeys[j]) {
                 count[array[i]] = 1;
-            } else {
-                count[array[i]]++;
+            } else if (arrKeys[i] == countKeys[j]) {
+                count[array[i]] += 1;
             }
         }
     }
