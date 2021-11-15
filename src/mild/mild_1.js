@@ -76,12 +76,12 @@ export function countArray(array) {
 export function countArray(array) {
     let count = new Object();
     for (let i = 0; i < array.length; i++) {
-        count[array[i]] = 0;
+        count[array[i]]++;
     }
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] in Object.keys(count)) {
-            count[array[i]]++;
-        }
-    }
+    //for (let i = 0; i < array.length; i++) {
+    //    if (array[i] in Object.keys(count)) {
+    //        count[array[i]]++;
+    //    }
+    //}
     return count;
 }
