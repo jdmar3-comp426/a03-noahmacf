@@ -76,6 +76,9 @@ export function countArray(array) {
 export function countArray(array) {
     let count = new Object();
     for (let i = 0; i < array.length; i++) {
+        count[array[i]] = 0;
+    }
+    for (let i = 0; i < array.length; i++) {
         count[array[i]]++;
     }
     //for (let i = 0; i < array.length; i++) {
