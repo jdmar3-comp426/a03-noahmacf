@@ -98,5 +98,9 @@ export function removeKeyNonDestructive(object, key) {
  * @return {*} The object with its keys removed.
  */
 export function removeKeys(object, keyList) {
-
+   let newObject = JSON.parse(JSON.stringify(object));
+   for (let i = 0; i < keyList.length; i++) {
+      delete newObject[keyList[i]];
+   }
+   return newObject;
 }
