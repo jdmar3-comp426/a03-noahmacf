@@ -25,10 +25,10 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-   let doubleArr = [[]];
+   let doubleArr = [];
    for (let i = 0; i < array.length; i++) {
       let t = typeof array[i];
-      let arr = {type: array[i], value: array[i]};
+      let arr = {type: t, value: array[i]};
       doubleArr.push(arr);
    }
    return doubleArr;
