@@ -26,9 +26,9 @@ export function identifyVariable(variable) {
  */
 export function identifyArray(array) {
    let doubleArr = [[]];
-   for (i in array) {
-      let t = typeof i;
-      let arr = {type: i, value: i};
+   for (let i = 0; i < array.length; i++) {
+      let t = typeof array[i];
+      let arr = {type: array[i], value: array[i]};
       doubleArr.push(arr);
    }
    return doubleArr;
