@@ -29,8 +29,8 @@ function averageMiles(data) {
     let sumCities = 0;
     let sumHighways = 0;
     for (let i = 0; i < data.length; i++) {
-        sumCities += data[i]['city'];
-        sumHighways += data[i]['highway'];
+        sumCities += data[i]['city_mpg'];
+        sumHighways += data[i]['highway_mpg'];
     }
     let avgCity = sumCities / data.length;
     let avgHighway = sumHighways / data.length;
