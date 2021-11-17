@@ -38,7 +38,7 @@ function averageMiles(data) {
 }
 
 function yearStats(data) {
-    let years;
+    let years = new Array();
     for (let i = 0; i < data.length; i++) {
         let year = data[i]['year'];
         years.push(year);
