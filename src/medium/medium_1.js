@@ -63,7 +63,7 @@ export function getStatistics(array) {
     let sum = getSum(array);
     let mean = sum / length;
     let v = variance(array, mean);
-    let sd = Math.sqrt(variance);
+    let sd = Math.sqrt(v);
     const statistics = {
         length: length, 
         sum: sum, 
